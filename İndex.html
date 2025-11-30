@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR KODLAR. / QR CODES</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter yazı tipini kullanmak için Tailwind ayarı -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            
+            /* --- ARKA PLAN GÖRSELİ GÜNCELLENDİ --- */
+            background-image: url('https://imagizer.imageshack.com/v2/768xq70/r/922/jxiXv5.jpg');
+            
+            background-size: cover; /* Tüm alanı kapla */
+            background-attachment: fixed; /* Sayfa kaydırılsa bile arka plan sabit kalsın */
+            background-position: center;
+        }
+    </style>
+</head>
+<body class="min-h-screen p-4 sm:p-8">
+
+    <!-- Ana İçerik Konteyneri -->
+    <div class="max-w-4xl mx-auto bg-gray-900 bg-opacity-80 backdrop-blur-sm p-6 sm:p-10 rounded-xl shadow-2xl">
+
+        <!-- Başlık ve GIF'ler Bölümü -->
+        <header class="text-center mb-10 border-b border-gray-700 pb-6">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-white mb-2 flex items-center justify-center space-x-4">
+                
+                <!-- İlk GIF -->
+                <img 
+                    src="https://i.imgur.com/rKDWblF.gif" 
+                    alt="Hareketli Başlık Görseli 1" 
+                    class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover shadow-lg"
+                    onerror="this.style.display='none'; console.error('GIF 1 yüklenemedi.')"
+                >
+                
+                <!-- Başlık Metni -->
+                <span>HOŞ GELDİNİZ</span>
+
+                <!-- İkinci GIF -->
+                <img 
+                    src="https://i.imgur.com/Sr0qu1h.gif" 
+                    alt="Hareketli Başlık Görseli 2" 
+                    class="w-16 h-16 sm:w-20 sm:h-20 rounded-lg object-cover shadow-lg"
+                    onerror="this.style.display='none'; console.error('GIF 2 yüklenemedi.')"
+                >
+            </h1>
+            <!-- İngilizce Çeviri Eklendi -->
+            <h2 class="text-3xl sm:text-4xl font-extrabold text-white mb-4">WELCOME</h2>
+        </header>
+
+        <!-- İçerik Bölümü -->
+        <section class="space-y-6 text-gray-200">
+            <h2 class="text-3xl font-bold text-indigo-400 border-l-4 border-indigo-400 pl-3">QR KODLAR / QR CODES</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 pt-4">
+                
+                <!-- Kart 1: GitHub QR Kodu -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center hover:shadow-indigo-500/50 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4 text-center">GİTHUB PROFİL QR KODU <br> <span class="text-lg font-normal text-gray-400">GİTHUB PROFİLE QR CODE</span></h3>
+                    
+                    <!-- QR kod görseli ve metni için dikey ortalama sağlayan kapsayıcı -->
+                    <div class="flex flex-col items-center justify-center flex-grow"> 
+                        <img 
+                            src="https://imagizer.imageshack.com/v2/768xq70/r/922/jfqXby.png" 
+                            alt="GitHub QR Kodu" 
+                            class="w-48 h-48 rounded-lg shadow-2xl object-contain mb-2"
+                            onerror="this.src = 'https://placehold.co/300x300/24292E/FFFFFF/png?text=GitHub+QR'"
+                        >
+                        <!-- Metin etiketi (Türkçe/İngilizce) -->
+                        <p class="text-xl text-indigo-400 font-bold">GİTHUB</p>
+                        <p class="text-sm text-gray-400">GİTHUB</p>
+                    </div>
+                </div>
+
+                <!-- Kart 2: YouTube QR Kodu -->
+                <div class="bg-gray-800 p-6 rounded-lg shadow-xl flex flex-col items-center hover:shadow-indigo-500/50 transition duration-300">
+                    <h3 class="text-2xl font-semibold text-white mb-4 text-center">YOUTUBE KANALI QR KODU <br> <span class="text-lg font-normal text-gray-400">YOUTUBE CHANNEL QR CODE</span></h3>
+                    
+                    <!-- QR kod görseli ve metni için dikey ortalama sağlayan kapsayıcı -->
+                    <div class="flex flex-col items-center justify-center flex-grow">
+                        <img 
+                            src="https://imagizer.imageshack.com/v2/768xq70/r/923/gLy4QW.png" 
+                            alt="YouTube QR Kodu" 
+                            class="w-48 h-48 rounded-lg shadow-2xl object-contain mb-2"
+                            onerror="this.src = 'https://placehold.co/300x300/FF0000/FFFFFF/png?text=YouTube+QR'"
+                        >
+                        <!-- Metin etiketi (Türkçe/İngilizce) -->
+                        <p class="text-xl text-indigo-400 font-bold">YOUTUBE</p>
+                        <p class="text-sm text-gray-400">YOUTUBE</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+</body>
+</html>
+
